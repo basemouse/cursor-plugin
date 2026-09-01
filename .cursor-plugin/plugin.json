@@ -1,0 +1,24 @@
+{
+  "name": "basemouse",
+  "displayName": "BaseMouse",
+  "version": "0.1.0",
+  "description": "BaseMouse MCP: search, context packs, and idempotent document upsert for agent memory.",
+  "author": {
+    "name": "BaseMouse",
+    "email": "hello@basemouse.com"
+  },
+  "homepage": "https://basemouse.com",
+  "repository": "https://github.com/basemouse/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["basemouse", "mcp", "context-pack", "memory", "agents"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "BASEMOUSE_API_KEY": {
+        "type": "string",
+        "title": "API key",
+        "description": "Bearer token (bm_...) from BaseMouse. Leave unset to use the public demo corpus."
+      }
+    }
+  }
+}

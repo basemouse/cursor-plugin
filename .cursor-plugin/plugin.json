@@ -1,7 +1,7 @@
 {
   "name": "basemouse",
   "displayName": "BaseMouse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BaseMouse MCP: search, context packs, and idempotent document upsert for agent memory.",
   "author": {
     "name": "BaseMouse",
@@ -17,7 +17,7 @@
       "BASEMOUSE_API_KEY": {
         "type": "string",
         "title": "API key",
-        "description": "Bearer token (bm_...) from BaseMouse. Leave unset to use the public demo corpus."
+        "description": "Optional. Config-file clients can send Bearer bm_... . Marketplace install uses one-click OAuth instead; leave this unset."
       }
     }
   }

@@ -1,10 +1,7 @@
 {
   "mcpServers": {
     "basemouse": {
-      "url": "https://basemouse.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${BASEMOUSE_API_KEY}"
-      }
+      "url": "https://basemouse.com/mcp"
     }
   }
 }

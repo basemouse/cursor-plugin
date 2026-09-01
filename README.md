@@ -7,9 +7,11 @@ Cursor / Grok Bot plugin wrapping BaseMouse MCP.
 - Identifier: `basemouse` (kebab-case `name` in `.cursor-plugin/plugin.json`)
 - Numeric marketplace id is assigned after Cursor review, not in this repo
 
-## Configure
+## Auth
 
-Set `BASEMOUSE_API_KEY` in Cursor dashboard, Plugins, Configure. Leave it empty for the public demo corpus. Never commit a key.
+Marketplace / one-click install is URL-only. Cursor starts OAuth against `https://basemouse.com/mcp`. Paste your existing `bm_...` key on the BaseMouse consent page (or continue with the public demo).
+
+Config-file clients can still send `Authorization: Bearer bm_...` themselves. The optional `BASEMOUSE_API_KEY` plugin variable is for that path, not for marketplace Connect. Never commit a key.
 
 ## Local test
 
@@ -18,7 +20,7 @@ mkdir -p ~/.cursor/plugins/local/basemouse
 # copy this repo contents into that folder, including .cursor-plugin/plugin.json
 ```
 
-Reload Window. Confirm the BaseMouse MCP tools load.
+Reload Window. Confirm the BaseMouse MCP tools load. Connect should prompt OAuth, not ask you to paste a key into plugin config.
 
 ## Publish
 
